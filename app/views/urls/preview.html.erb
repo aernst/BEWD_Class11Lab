@@ -1,0 +1,17 @@
+
+<h1>Preview</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Original Link:</strong>
+  <%= @url.link %>
+</p>
+
+<p>
+  <strong>New Link:</strong>
+  <%= link_to "http://localhost:3000/"+@url.hashcode, "http://localhost:3000/"+@url.hashcode %>
+</p>
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Overview', urls_path %> |
+<%= link_to 'Back', url_path(@url) %>

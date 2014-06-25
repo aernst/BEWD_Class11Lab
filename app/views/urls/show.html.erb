@@ -1,0 +1,17 @@
+<h1>Show</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @url.link %>
+</p>
+
+<p>
+  <strong>Hashcode:</strong>
+  <%= @url.hashcode %>
+</p>
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %> |
+<%= link_to 'Random Code', "/random_code/#{@url.id}" %></td>
+<%= link_to 'Preview', "/#{@url.hashcode}/preview" %>
